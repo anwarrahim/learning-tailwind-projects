@@ -53,12 +53,13 @@ import emailImgae from '../assets/email/images/image.jpg'
         /> } */}
         { projectData.map((project, index) =>{
             console.log(project.proj)
-        })
-
-            
+              
+          return(
             <div key={index}>
-             <h1> {project.projectName}</h1>
+               <h1> {project.projectName}</h1>
             </div>
+          )  
+            })
         }
         
       
