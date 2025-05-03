@@ -37,10 +37,13 @@ import emailImgae from '../assets/email/images/image.jpg'
    
   const ProjectsPage = ()=>{
 
+  
     
 
     return(
         <>
+
+
              {/* {<EmailSubs 
         mainImage = {emailImgae}
         name = "Anwar" 
@@ -48,14 +51,23 @@ import emailImgae from '../assets/email/images/image.jpg'
         mainPara = "Eat better and excercise better. Sign up for the diet and Fitness"
         
         /> } */}
-        <div>
+        { projectData.map((project, index) =>{
+            console.log(project.proj)
+        })
+
             
-        </div>
+            <div key={index}>
+             <h1> {project.projectName}</h1>
+            </div>
+        }
+        
       
 
 
         </>
     )
+   
+
   }
 
 export default ProjectsPage
