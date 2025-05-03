@@ -1,14 +1,19 @@
-import EmailSubs from "../components/email-subscribe/EmailSubs"
+
 
 const HomePage = ()=>{
     return(
         <>
 
-        <EmailSubs 
+        {/* <EmailSubs 
+        mainImage = {emailImgae}
         name = "Anwar" 
         mainHeading = "Get diet and fitness tips in your inbox "
+        mainPara = "Eat better and excercise better. Sign up for the diet and Fitness"
         
-        />
+        /> */}
+
+
+        
         
         </>
     )

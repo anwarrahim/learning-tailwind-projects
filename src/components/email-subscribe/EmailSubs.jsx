@@ -11,11 +11,11 @@ const EmailSubs = (props)=>{
             {/* flex-container */}
             <div className="flex flex-col md:flex-row">
                 {/* image */}
-                <img className='object-fit rounded-tl-2xl rounded-bl-2xl h-80' src={emailImgae} alt="image" />
+                <img className='object-fit rounded-tl-2xl rounded-bl-2xl h-80' src={props.mainImage} alt="image" />
                 {/* content */}
                 <div className="flex items-center justify-center flex-col p-8">
-                      <h3 className='text-white text-2xl'>Get diet and fitness tips in your inbox</h3>
-                      <p className='text-white'>Eat better and excercise better. Sign up for the diet and Fitness</p>
+                      <h3 className='text-white text-2xl'>{props.mainHeading}</h3>
+                      <p className='text-white'>{props.mainPara}</p>
                       <div className='flex gap-4'>
 
                         <input className='border-2 border-black p-2 rounded-lg' type="email" placeholder='hello@anwarrahim.com' />
