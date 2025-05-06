@@ -68,7 +68,7 @@ import emailImgae from '../assets/email/images/image.jpg'
         /> } */}
 
         <div className=" bg-blue-300 w-full h-full p-30">
-        <div className="flex flex-wrap bg-amber-200 border-2 border-black ">
+        <div className="flex flex-wrap  bg-amber-200 border-2 border-black ">
 
         { projectData.map((project, index) =>{
             
@@ -81,17 +81,7 @@ import emailImgae from '../assets/email/images/image.jpg'
                      
                         <h2 className="  relative z-10 text-2xl bg-gray-700/50 text-white inline-block px-2">{project.projectName}</h2>
                           {/* image */}
-                        <div className="flex gap-2">
-                          <img className='relative z-0 bottom-14 rounded-tl-2xl rounded-bl-2xl h-80' src={project.mainImg} alt="image" />
-                        {/* content */}
-                          <p className='text-white text-justify   h-80 w-40 text-sm'>{project.description}</p>
-                        </div>
-        
-                        <div className="flex items-center justify-center flex-col p-8">
-                              <button className='text-white'>{project.buttonLink}</button>
-                              <div className='flex gap-4'> 
-                              </div>
-                        </div>
+                        
                         
                    
 
