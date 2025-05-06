@@ -68,28 +68,34 @@ import emailImgae from '../assets/email/images/image.jpg'
         /> } */}
 
         <div className=" bg-blue-300 w-full h-full p-30">
-        <div className="flex flex-wrap  bg-amber-200 border-2 border-black ">
+        <div className="flex flex-wrap  bg-amber-200 border-2 p-4 gap-4 border-black ">
 
         { projectData.map((project, index) =>{
             
               
           return(
             
-        <div className=" w-1/3 border-2 border-black" >
+        <div className="flex flex-col md:w-1/4 flex-grow border-2 bg-amber-700 border-black " >
                 
                       {/* card*/}
-                      <div>
-                          <h2 className="  relative z-10 text-2xl bg-gray-700/50 text-white inline-block px-2">{project.projectName}</h2>
+                      <div className=" flex flex-col md:flex-row p-0">
+                          <div className="p-4">
+                            <h2 className="  relative z-10 text-2xl bg-gray-700/50 text-white inline-block">{project.projectName}</h2>
+                            <img className="h-80 w-full md:w-50" src={project.mainImg} alt="" />
+                          </div>
+                          <div className=" w-full p-4 md:p-1 md:max-w-40 ">
+                            <p className="text-xs justify-between pt-10">{project.description}</p>
+                            <div>
+                              <button className="bg-white text-xl px-2">live</button>
+                              <button className="">code</button>
+                            </div>
+                            
+                          </div>
                       </div>
-                     
-                          {/* image */}
-                        
-                        
-                   
-
-                
+                      
+                      
               
-                </div>
+        </div>
             
           )  
             })
