@@ -78,8 +78,10 @@ import emailImgae from '../assets/email/images/image.jpg'
         <div className=" w-1/3 border-2 border-black" >
                 
                       {/* card*/}
+                      <div>
+                          <h2 className="  relative z-10 text-2xl bg-gray-700/50 text-white inline-block px-2">{project.projectName}</h2>
+                      </div>
                      
-                        <h2 className="  relative z-10 text-2xl bg-gray-700/50 text-white inline-block px-2">{project.projectName}</h2>
                           {/* image */}
                         
                         
