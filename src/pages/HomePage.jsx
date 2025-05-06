@@ -1,22 +1,11 @@
+import ProjectsPage from "./ProjectsPage";
 
-
-const HomePage = ()=>{
-    return(
-        <>
-
-        {/* <EmailSubs 
-        mainImage = {emailImgae}
-        name = "Anwar" 
-        mainHeading = "Get diet and fitness tips in your inbox "
-        mainPara = "Eat better and excercise better. Sign up for the diet and Fitness"
-        
-        /> */}
-
-
-        
-        
-        </>
-    )
+const HomePage = () => {
+  return (
+    <>
+      <ProjectsPage />
+    </>
+  );
 }
 
-export default HomePage
+export default HomePage;
