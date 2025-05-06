@@ -85,9 +85,9 @@ import emailImgae from '../assets/email/images/image.jpg'
                           </div>
                           <div className=" w-full p-4 md:p-1 md:max-w-40 ">
                             <p className="text-xs justify-between pt-10">{project.description}</p>
-                            <div>
-                              <button className="bg-white text-xl px-2">live</button>
-                              <button className="">code</button>
+                            <div className="pt-30 flex gap-1">
+                              <button className="bg-white text-2xl px-2 ">live</button>
+                              <button className="bg-white text-2xl px-2">code</button>
                             </div>
                             
                           </div>
