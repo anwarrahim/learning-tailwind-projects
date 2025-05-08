@@ -1,4 +1,6 @@
 import emailImgae from '../../assets/email/images/image.jpg';
+import { BrowserRouter as Router, Routes ,Route, Link } from 'react-router-dom';
+import Header from './Header'
 
 const EmailSubs = (props) => {
     // Set default values for props
@@ -8,8 +10,16 @@ const EmailSubs = (props) => {
 
     return(
         <>
+        
         {/* main container */}
-        <div className="flex items-center h-screen justify-center bg-zinc-200">
+        <div className='bg-zinc-200 pl-20 pt-10'>
+               < Link to="/"> <Header
+            homeName = "Home"
+        /></Link> 
+        
+        
+        <div className="flex items-center h-screen justify-center ">
+          
         {/* card */}
         <div className=" p-2 mx-6 rounded-2xl bg-zinc-500">
             {/* flex-container */}
@@ -26,6 +36,7 @@ const EmailSubs = (props) => {
                       </div>
                 </div>
             </div>
+        </div>
         </div>
         </div>
         </>

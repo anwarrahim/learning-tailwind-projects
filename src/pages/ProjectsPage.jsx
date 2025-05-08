@@ -67,8 +67,8 @@ import emailImgae from '../assets/email/images/image.jpg'
                   <img className="h-80 w-full md:w-50" src={project.mainImg} alt="" />
                 </div>
                 <div className="w-full p-4 md:p-1 md:max-w-40">
-                  <p className="text-xs justify-between pt-10">{project.description}</p>
-                  <div className="pt-30 flex gap-1">
+                  <p className="text-xs justify-between  md:pt-10">{project.description}</p>
+                  <div className=" pt-5 p md:pt-30 flex gap-1">
                     <Link to={project.buttonLink} className="bg-white text-2xl px-2">
                       live
                     </Link>
