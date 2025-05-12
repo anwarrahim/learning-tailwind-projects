@@ -61,10 +61,10 @@ import emailImgae from '../assets/email/images/image.jpg'
               {/* card */}
               <div className="flex flex-col md:flex-row p-0">
                 <div className="p-4">
-                  <h2 className="relative z-10 text-2xl bg-gray-700/50 text-white inline-block">
+                  <h2 className="relative top-18 rounded-sm z-10 text-xl px-2 bg-gray-700/50 text-white inline-block">
                     {project.projectName}
                   </h2>
-                  <img className="h-80 w-full md:w-50" src={project.mainImg} alt="" />
+                  <img className="h-80 rounded-sm w-full md:w-50 " src={project.mainImg} alt="" />
                 </div>
                 <div className="w-full p-4 md:p-1 md:max-w-40">
                   <p className="text-xs justify-between  md:pt-10">{project.description}</p>
